@@ -1,9 +1,11 @@
-import Header from "@/pages/header";
+import Header from "@/pages/home/header";
+import Hero from "@/pages/home/hero";
 
 export default function Home() {
   return (
-    <main className="main pt-[30px] pb-[60px]">
+    <main className="main py-[30px]">
       <Header />
+      <Hero />
     </main>
   );
 }

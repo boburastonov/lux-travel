@@ -18,9 +18,17 @@ body {
 }
 
 .main {
-  background-image: url('/public/main-bg.png');
+  background-image: url('../../public/main-bg.png');
 }
 
 .place-link:hover span {
   color: #69b1ff;
+}
+
+.slider-pr:focus-visible {
+  outline: none;
+}
+
+.slick-arrow::before {
+  display: none;
 }

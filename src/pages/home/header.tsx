@@ -2,9 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import Logo from "../../public/logo.svg";
-import Burger from "../../public/burger.svg";
-import Drawer from "@/components/drawer";
+import Logo from "../../../public/logo.svg";
+import Burger from "../../../public/burger.svg";
 import VerticalMenu from "@/components/vertical-menu";
 
 const Header = () => {
