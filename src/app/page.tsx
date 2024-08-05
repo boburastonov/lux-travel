@@ -1,6 +1,7 @@
 import Collage from "@/pages/home/collage";
 import Header from "@/pages/home/header";
 import Hero from "@/pages/home/hero";
+import SelCause from "@/pages/home/selCause";
 import Video from "@/pages/home/video";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       </main>
       <Video />
       <Collage />
+      <SelCause />
     </>
   );
 }

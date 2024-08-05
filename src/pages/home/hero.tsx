@@ -99,17 +99,17 @@ const Hero = () => {
         </ul>
         <ul className="flex flex-wrap justify-center items-center p-0 m-0 list-none">
           <li className="mr-[50px] mb-[30px] bg-[#ff9548] py-[15px] px-10 transition-all duration-[0.3s] rounded-[5px] hover:shadow-[1px_1px_5px_5px_#ffffff6c]">
-            <Link href={"/contact"} className="text-white text-[17px]">
+            <Link href={"/contact"} className="hero-btn text-white text-[17px]">
               Bepul konsultatsiya
             </Link>
           </li>
           <li className="mr-[50px] mb-[30px] bg-[#5ec2ec] py-[15px] px-10 transition-all duration-[0.3s] rounded-[5px] hover:shadow-[1px_1px_5px_5px_#ffffff6c]">
-            <Link href={"/contact"} className="text-white text-[17px]">
+            <Link href={"/contact"} className="hero-btn text-white text-[17px]">
               Tayyor tur paketlar
             </Link>
           </li>
         </ul>
-        <Slider {...settings} className="md:w-[98%] w-[96%] mx-auto">
+        <Slider {...settings} className="slider-pr md:w-[98%] w-[95%] mx-auto">
           <div className="slider-pr">
             <Image
               src={Slide1}

@@ -18,7 +18,7 @@ body {
 }
 
 .main {
-  background-image: url('../../public/main-bg.png');
+  background-image: url("../../public/main-bg.png");
 }
 
 .place-link:hover span {
@@ -33,8 +33,30 @@ body {
   display: none;
 }
 
+.sel-cause {
+  background-image: url(../../public/selection-cause.png);
+}
+
+@media (max-width: 768px) {
+  .slider-pr {
+    width: 94%;
+  }
+}
+
 @media (max-width: 417px) {
   .nav {
     width: 100%;
+  }
+
+  .slider-pr {
+    width: 92%;
+  }
+
+  .hero-btn {
+    margin-right: 0;
+  }
+
+  .card-sel {
+    margin-right: 0;
   }
 }
