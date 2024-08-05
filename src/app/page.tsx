@@ -1,6 +1,7 @@
 import Collage from "@/pages/home/collage";
 import Header from "@/pages/home/header";
 import Hero from "@/pages/home/hero";
+import RestPlaces from "@/pages/home/restPlaces";
 import SelCause from "@/pages/home/selCause";
 import Video from "@/pages/home/video";
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Video />
       <Collage />
       <SelCause />
+      <RestPlaces />
     </>
   );
 }

@@ -37,9 +37,17 @@ body {
   background-image: url(../../public/selection-cause.png);
 }
 
+.rest-card:hover {
+  transform: translateY(-5px);
+}
+
 @media (max-width: 768px) {
   .slider-pr {
     width: 94%;
+  }
+
+  .rest-card:not(:last-child) {
+    margin-bottom: 15px;
   }
 }
 
