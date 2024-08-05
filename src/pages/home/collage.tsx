@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import Collage1 from "../../../public/collage-1.png";
-import Collage2 from "../../../public/collage-2.png";
 import Collage4 from "../../../public/collage-4.png";
 import Collage5 from "../../../public/collage-5.png";
 import Collage6 from "../../../public/collage-6.png";
@@ -33,7 +32,7 @@ const Collage = () => {
           </div>
           <div className="w-[220px] h-[140px] rounded-2 flex items-center justify-center shadow-[1px_1px_3px_3px_#a4a2a2]  rounded-lg">
             <Image
-              src={Collage2}
+              src={Collage4}
               width={220}
               height={140}
               alt="collage"
