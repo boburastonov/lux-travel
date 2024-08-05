@@ -26,7 +26,7 @@ const VerticalMenu: FC<DrawerProps> = ({ isOpen, onClose }) => {
       onClick={onClose}
     >
       <div
-        className={`fixed top-0 right-0 w-[378px] h-auto bg-white transition-transform duration-300 transform ${
+        className={`nav fixed top-0 right-0 w-[378px] h-auto bg-white transition-transform duration-300 transform ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

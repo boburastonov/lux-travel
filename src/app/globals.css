@@ -32,3 +32,9 @@ body {
 .slick-arrow::before {
   display: none;
 }
+
+@media (max-width: 417px) {
+  .nav {
+    width: 100%;
+  }
+}
