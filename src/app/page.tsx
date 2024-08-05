@@ -3,6 +3,7 @@ import Header from "@/pages/home/header";
 import Hero from "@/pages/home/hero";
 import RestPlaces from "@/pages/home/restPlaces";
 import SelCause from "@/pages/home/selCause";
+import Services from "@/pages/home/services";
 import Video from "@/pages/home/video";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Collage />
       <SelCause />
       <RestPlaces />
+      <Services />
     </>
   );
 }
