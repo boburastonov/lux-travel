@@ -7,7 +7,7 @@ const Video = () => {
         <h1 className="w-full lg:text-[30px] md:text-[27px] text-[23px] mb-5 font-semibold text-center">
           Biz haqimizda quyidagi video orqali batafsil bilib oling
         </h1>
-        <div className="w-[90%] mx-auto flex items-center justify-center">
+        <div className="w-[60%] h-[400px] mx-auto flex items-center justify-center">
           <iframe
             width="100%"
             height="100%"
