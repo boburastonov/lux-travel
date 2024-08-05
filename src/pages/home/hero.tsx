@@ -76,7 +76,7 @@ const Hero = () => {
             <h1 className="text-[24px] pt-[10px] font-semibold text-[#333]">
               Tajriba
             </h1>
-            <p className="text-[17px] text[#666] font-normal">
+            <p className="text-[16px] text[#666] font-normal">
               10 yildan ortiq tajribaga ega jamoa
             </p>
           </li>
@@ -84,7 +84,7 @@ const Hero = () => {
             <h1 className="text-[24px] pt-[10px] font-semibold text-[#333]">
               Qulay narxlar
             </h1>
-            <p className="text-[17px] text[#666] font-normal">
+            <p className="text-[16px] text[#666] font-normal">
               7 kunlik sayohat $100 dan boshlanadi
             </p>
           </li>
@@ -92,7 +92,7 @@ const Hero = () => {
             <h1 className="text-[24px] pt-[10px] font-semibold text-[#333]">
               Keng tanlov
             </h1>
-            <p className="text-[17px] text[#666] font-normal">
+            <p className="text-[16px] text[#666] font-normal">
               Sayohatingiz davomida 10dan...
             </p>
           </li>
