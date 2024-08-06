@@ -1,5 +1,6 @@
 import Accardion from "@/pages/home/accordion";
 import Collage from "@/pages/home/collage";
+import Contact from "@/pages/home/contact";
 import Header from "@/pages/home/header";
 import Hero from "@/pages/home/hero";
 import RestPlaces from "@/pages/home/restPlaces";
@@ -20,6 +21,7 @@ export default function Home() {
       <RestPlaces />
       <Services />
       <Accardion />
+      <Contact />
     </>
   );
 }
