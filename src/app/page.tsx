@@ -11,7 +11,7 @@ import Video from "@/pages/home/video";
 export default function Home() {
   return (
     <>
-      <main className="main py-[30px]">
+      <main className="main md:py-[30px]">
         <Header />
         <Hero />
       </main>
