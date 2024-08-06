@@ -1,3 +1,4 @@
+import Accardion from "@/pages/home/accordion";
 import Collage from "@/pages/home/collage";
 import Header from "@/pages/home/header";
 import Hero from "@/pages/home/hero";
@@ -18,6 +19,7 @@ export default function Home() {
       <SelCause />
       <RestPlaces />
       <Services />
+      <Accardion />
     </>
   );
 }

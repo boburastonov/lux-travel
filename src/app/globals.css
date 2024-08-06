@@ -41,6 +41,20 @@ body {
   transform: translateY(-5px);
 }
 
+.tap-highlight-transparent {
+  padding: 16px 16px;
+  border: 0 !important;
+  border-bottom: 1px solid #9d9d9d !important;
+  outline: none !important;
+}
+
+.py-2 {
+  padding: 16px;
+  background-color: white !important;
+  border-bottom: 1px solid #9d9d9d !important;
+  font-size: 14px;
+}
+
 @media (max-width: 768px) {
   .slider-pr {
     width: 94%;
