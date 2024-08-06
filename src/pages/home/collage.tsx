@@ -27,7 +27,7 @@ const Collage = () => {
               width={220}
               height={140}
               alt="collage"
-              className="w-full h-full"
+              className="w-full h-full object-cover"
             />
           </div>
           <div className="w-[220px] h-[140px] rounded-2 flex items-center justify-center shadow-[1px_1px_3px_3px_#a4a2a2]  rounded-lg">
@@ -36,7 +36,7 @@ const Collage = () => {
               width={220}
               height={140}
               alt="collage"
-              className="w-full h-full"
+              className="w-full h-full object-cover"
             />
           </div>
           <div className="w-[220px] h-[140px] rounded-2 flex items-center justify-center shadow-[1px_1px_3px_3px_#a4a2a2]  rounded-lg">
@@ -50,7 +50,7 @@ const Collage = () => {
               width={220}
               height={140}
               alt="collage"
-              className="w-full h-full"
+              className="w-full h-full object-cover"
             />
           </div>
           <div className="w-[220px] h-[140px] rounded-2 flex items-center justify-center shadow-[1px_1px_3px_3px_#a4a2a2]  rounded-lg">
@@ -59,7 +59,7 @@ const Collage = () => {
               width={220}
               height={140}
               alt="collage"
-              className="w-full h-full"
+              className="w-full h-full object-cover"
             />
           </div>
           <div className="w-[220px] h-[140px] rounded-2 flex items-center justify-center shadow-[1px_1px_3px_3px_#a4a2a2]  rounded-lg">
@@ -68,7 +68,7 @@ const Collage = () => {
               width={220}
               height={140}
               alt="collage"
-              className="w-full h-full"
+              className="w-full h-full object-cover"
             />
           </div>
           <div className="w-[220px] h-[140px] rounded-2 flex items-center justify-center shadow-[1px_1px_3px_3px_#a4a2a2]  rounded-lg">
@@ -77,7 +77,7 @@ const Collage = () => {
               width={220}
               height={140}
               alt="collage"
-              className="w-full h-full"
+              className="w-full h-full object-cover"
             />
           </div>
           <div className="w-[220px] h-[140px] rounded-2 flex items-center justify-center shadow-[1px_1px_3px_3px_#a4a2a2]  rounded-lg">
@@ -86,7 +86,7 @@ const Collage = () => {
               width={220}
               height={140}
               alt="collage"
-              className="w-full h-full"
+              className="w-full h-full object-cover"
             />
           </div>
           <div className="w-[220px] h-[140px] rounded-2 flex items-center justify-center shadow-[1px_1px_3px_3px_#a4a2a2]  rounded-lg">
@@ -95,7 +95,7 @@ const Collage = () => {
               width={220}
               height={140}
               alt="collage"
-              className="w-full h-full"
+              className="w-full h-full object-cover"
             />
           </div>
           <div className="w-[220px] h-[140px] rounded-2 flex items-center justify-center shadow-[1px_1px_3px_3px_#a4a2a2]  rounded-lg">
@@ -104,7 +104,7 @@ const Collage = () => {
               width={220}
               height={140}
               alt="collage"
-              className="w-full h-full"
+              className="w-full h-full object-cover"
             />
           </div>
         </div>
