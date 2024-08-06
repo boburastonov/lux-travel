@@ -9,6 +9,7 @@
 body {
   color: black;
   background: #fff;
+  overflow-x: hidden;
 }
 
 @layer utilities {
@@ -63,6 +64,28 @@ body {
   .rest-card:not(:last-child) {
     margin-bottom: 15px;
   }
+
+  .tap-highlight-transparent {
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+
+  .py-2 {
+    padding: 12px 16px;
+    font-size: 12px;
+  }
+
+  .btn-el:first-child {
+    margin-right: 10px;
+  }
+
+  .card-el {
+    margin-bottom: 20px;
+  }
+
+  .btn-el {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 417px) {
@@ -80,5 +103,13 @@ body {
 
   .card-sel {
     margin-right: 0;
+  }
+
+  .card-el {
+    margin-right: 0;
+  }
+
+  .btn-el {
+    margin-right: 0 !important;
   }
 }
