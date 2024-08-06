@@ -17,7 +17,10 @@ const Accardion = () => {
         <h1 className="text-[33px] font-semibold text-center py-[10px]">
           Mijozlar tomonidan berilgan savollar
         </h1>
-        <Accordion selectionMode="multiple" className="w-[80%] mx-auto my-10 border border-solid border-[#d9d9d9] rounded-[8px] bg-[#FAFAFA]">
+        <Accordion
+          variant="splitted"
+          className="w-[80%] mx-auto border border-solid border-[#d9d9d9] rounded-[8px] bg-[#FAFAFA]"
+        >
           <AccordionItem
             key="1"
             aria-label="Sizning mahsulotlaringizning saqlash muddati qancha?"
