@@ -68,8 +68,8 @@ const Hero = () => {
         <p className="lg:w-[60%] lg:text-left md:text-[18px] md:leading-[25px] md:mb-[30px] w-full text-center text-[17px] leading-[17px] mb-[10px] text-white">
           Bepul konsultatsiya uchun ro’yxatdan o’ting
         </p>
-        <ul className="flex flex-wrap items-center md:justify-center lg:justify-start p-0 m-0 list-none">
-          <li className="bg-white mr-5 mb-[30px] w-[270px] h-[120px] p-[15px] rounded-[8px] text-center">
+        <ul className="flex flex-wrap items-center justify-center lg:justify-start p-0 m-0 list-none">
+          <li className="card-el bg-white mr-5 mb-[30px] w-[270px] h-[120px] p-[15px] rounded-[8px] text-center">
             <h1 className="text-[24px] pt-[10px] font-semibold text-[#333]">
               Tajriba
             </h1>
@@ -77,7 +77,7 @@ const Hero = () => {
               10 yildan ortiq tajribaga ega jamoa
             </p>
           </li>
-          <li className="bg-white mr-5 mb-[30px] w-[270px] h-[120px] p-[15px] rounded-[8px] text-center">
+          <li className="card-el bg-white mr-5 mb-[30px] w-[270px] h-[120px] p-[15px] rounded-[8px] text-center">
             <h1 className="text-[24px] pt-[10px] font-semibold text-[#333]">
               Qulay narxlar
             </h1>
@@ -85,7 +85,7 @@ const Hero = () => {
               7 kunlik sayohat $100 dan boshlanadi
             </p>
           </li>
-          <li className="bg-white mr-5 mb-[30px] w-[270px] h-[120px] p-[15px] rounded-[8px] text-center">
+          <li className="card-el bg-white mr-5 mb-[30px] w-[270px] h-[120px] p-[15px] rounded-[8px] text-center">
             <h1 className="text-[24px] pt-[10px] font-semibold text-[#333]">
               Keng tanlov
             </h1>
@@ -94,13 +94,13 @@ const Hero = () => {
             </p>
           </li>
         </ul>
-        <ul className="flex flex-wrap md:justify-center lg:justify-start items-center p-0 m-0 list-none">
-          <li className="mr-[50px] mb-[30px] bg-[#ff9548] py-[15px] px-10 transition-all duration-[0.3s] rounded-[5px] hover:shadow-[1px_1px_5px_5px_#ffffff6c]">
+        <ul className="flex flex-wrap justify-center lg:justify-start items-center p-0 m-0 list-none">
+          <li className="btn-el md:mr-[50px] mb-[30px] bg-[#ff9548] py-[15px] px-10 transition-all duration-[0.3s] rounded-[5px] hover:shadow-[1px_1px_5px_5px_#ffffff6c]">
             <Link href={"/contact"} className="hero-btn text-white text-[17px]">
               Bepul konsultatsiya
             </Link>
           </li>
-          <li className="mr-[50px] mb-[30px] bg-[#5ec2ec] py-[15px] px-10 transition-all duration-[0.3s] rounded-[5px] hover:shadow-[1px_1px_5px_5px_#ffffff6c]">
+          <li className="btn-el md:mr-[50px] mb-[30px] bg-[#5ec2ec] py-[15px] px-10 transition-all duration-[0.3s] rounded-[5px] hover:shadow-[1px_1px_5px_5px_#ffffff6c]">
             <Link href={"/contact"} className="hero-btn text-white text-[17px]">
               Tayyor tur paketlar
             </Link>
