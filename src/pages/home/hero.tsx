@@ -32,7 +32,7 @@ const Hero = () => {
         settings: {
           slidesToShow: 5,
           slidesToScroll: 1,
-         
+
           infinite: true,
         },
       },
@@ -41,7 +41,6 @@ const Hero = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-         
         },
       },
       {
@@ -49,7 +48,6 @@ const Hero = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-         
         },
       },
       {
@@ -57,7 +55,6 @@ const Hero = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-         
         },
       },
     ],
@@ -71,7 +68,7 @@ const Hero = () => {
         <p className="lg:w-[60%] lg:text-left md:text-[18px] md:leading-[25px] md:mb-[30px] w-full text-center text-[17px] leading-[17px] mb-[10px] text-white">
           Bepul konsultatsiya uchun ro’yxatdan o’ting
         </p>
-        <ul className="flex flex-wrap items-center justify-center p-0 m-0 list-none">
+        <ul className="flex flex-wrap items-center md:justify-center lg:justify-start p-0 m-0 list-none">
           <li className="bg-white mr-5 mb-[30px] w-[270px] h-[120px] p-[15px] rounded-[8px] text-center">
             <h1 className="text-[24px] pt-[10px] font-semibold text-[#333]">
               Tajriba
@@ -97,7 +94,7 @@ const Hero = () => {
             </p>
           </li>
         </ul>
-        <ul className="flex flex-wrap justify-center items-center p-0 m-0 list-none">
+        <ul className="flex flex-wrap md:justify-center lg:justify-start items-center p-0 m-0 list-none">
           <li className="mr-[50px] mb-[30px] bg-[#ff9548] py-[15px] px-10 transition-all duration-[0.3s] rounded-[5px] hover:shadow-[1px_1px_5px_5px_#ffffff6c]">
             <Link href={"/contact"} className="hero-btn text-white text-[17px]">
               Bepul konsultatsiya
