@@ -20,14 +20,14 @@ interface DrawerProps {
 const VerticalMenu: FC<DrawerProps> = ({ isOpen, onClose }) => {
   return (
     <div
-      className={`fixed inset-0 bg-[#00000073] bg-opacity-50 transition-opacity duration-300 ${
+      className={`z-50 fixed inset-0 bg-[#00000073] bg-opacity-50 transition-opacity duration-300 ${
         isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
       onClick={onClose}
     >
       <div
         className={`nav fixed top-0 right-0 w-[378px] h-auto bg-white transition-transform duration-300 transform ${
-          isOpen ? "translate-x-0" : "translate-x-full"
+          isOpen ? "translate-x-0" : "translate-x-full "
         }`}
       >
         <div className="py-4 px-6 border border-solid border-[#050505f]">

@@ -1,27 +1,10 @@
-import Accardion from "@/pages/home/accordion";
-import Collage from "@/pages/home/collage";
-import Contact from "@/pages/home/contact";
-import Header from "@/pages/home/header";
-import Hero from "@/pages/home/hero";
-import RestPlaces from "@/pages/home/restPlaces";
-import SelCause from "@/pages/home/selCause";
-import Services from "@/pages/home/services";
-import Video from "@/pages/home/video";
+import Main from "@/pages/main/page";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-      <main className="main md:py-[30px]">
-        <Header />
-        <Hero />
-      </main>
-      <Video />
-      <Collage />
-      <SelCause />
-      <RestPlaces />
-      <Services />
-      <Accardion />
-      <Contact />
+      <Main />
     </>
   );
 }
