@@ -8,7 +8,7 @@ import axios from "axios";
 const Contact = () => {
   // const [activeButton, setActiveButton] = useState("button1");
   const [inputValue, setInputValue] = useState<string>("");
-  const [numberValue, setNumberValue] = useState<number>();
+  const [numberValue, setNumberValue] = useState<string>("");
   const [areaValue, setAreaValue] = useState<string>("");
 
   const messageHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -16,6 +16,7 @@ const Contact = () => {
   };
 
   const sendMessage = (e: React.FormEvent) => {
+    console.log(numberValue,"numberValue")
     e.preventDefault();
     if (!numberValue && !inputValue) {
       toast.error("Please fill in both fields.");
@@ -36,7 +37,7 @@ const Contact = () => {
     })
       .then((res) => {
         setInputValue("");
-        setNumberValue(undefined);
+        setNumberValue("");
         setAreaValue("");
         toast.success("Your data has been sent successfully!");
       })
@@ -69,12 +70,13 @@ const Contact = () => {
                 placeholder="+998"
                 required
                 value={numberValue}
-                onChange={() => setNumberValue(numberValue)}
+                 onChange={(e) => setNumberValue(e?.target?.value)}
                 minLength={9}
               />
               <textarea
                 className="w-full border-0 p-[10px] my-[10px] text-[16px] bg-transparent border-b border-solid border-white text-white min-h-[100px]"
                 placeholder="Savolingiz..."
+                value={areaValue}
                 onChange={(e)=>setAreaValue(e.target.value)}
               />
               <label className="flex items-center gap-5">
