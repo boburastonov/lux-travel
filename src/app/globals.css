@@ -9,7 +9,6 @@
 body {
   color: black;
   background: #fff;
-  overflow-x: hidden;
 }
 
 @layer utilities {
@@ -56,6 +55,14 @@ body {
   font-size: 14px;
 }
 
+.table-pr {
+  overflow-x: auto;
+}
+
+.navbar {
+  overflow-y: auto !important;
+}
+
 @media (max-width: 768px) {
   .slider-pr {
     width: 94%;
@@ -86,6 +93,10 @@ body {
   .btn-el {
     margin-bottom: 20px;
   }
+
+  .table-pr {
+    width: 416px;
+  }
 }
 
 @media (max-width: 417px) {
@@ -111,5 +122,9 @@ body {
 
   .btn-el {
     margin-right: 0 !important;
+  }
+
+  .table-pr {
+    width: 319px;
   }
 }

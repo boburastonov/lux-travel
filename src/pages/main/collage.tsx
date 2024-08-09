@@ -9,16 +9,18 @@ import Collage8 from "../../../public/collage-8.png";
 import Collage9 from "../../../public/collage-9.png";
 import Collage10 from "../../../public/collage-10.png";
 import Collage11 from "../../../public/collage-11.png";
+import { useTranslations } from "next-intl";
 
 const Collage = () => {
+  const t = useTranslations();
   return (
     <section className="py-5">
       <div className="max-w-7xl py-3 mx-auto">
         <h1 className="md:text-[27px] md:leading-[34px] text-[25px] leading-7 py-[10px] font-semibold text-center">
-          2,000 dan ortiq mijozlarimiz bizning xizmatlarimizdan mamnun
+          {t("mamnun")}
         </h1>
         <p className="md:text-[18px] md:leading-6 md:pb-[30px] text-[16px] leading-5 pb-[23px] font-normal text-center text-[#333]">
-          Bizga ishonch bildirgan mijozlarimizning suratlaridan namunalar
+          {t('ishonch')}
         </p>
         <div className="flex item-center justify-evenly flex-wrap gap-3">
           <div className="w-[220px] h-[140px] rounded-2 flex items-center justify-center shadow-[1px_1px_3px_3px_#a4a2a2]  rounded-lg">
@@ -26,7 +28,7 @@ const Collage = () => {
               src={Collage1}
               width={220}
               height={140}
-              alt="collage"
+              alt={t("collage")}
               className="w-full h-full object-cover"
             />
           </div>
@@ -35,13 +37,13 @@ const Collage = () => {
               src={Collage4}
               width={220}
               height={140}
-              alt="collage"
+              alt={t("collage")}
               className="w-full h-full object-cover"
             />
           </div>
           <div className="w-[220px] h-[140px] rounded-2 flex items-center justify-center shadow-[1px_1px_3px_3px_#a4a2a2]  rounded-lg">
             <h3 className="pt-5 text-[17px] leading-6 text-center font-normal text-[#333]">
-              Bu yerda sizning suratingiz bo’lishi mumkin edi
+              {t('surat')}
             </h3>
           </div>
           <div className="w-[220px] h-[140px] rounded-2 flex items-center justify-center shadow-[1px_1px_3px_3px_#a4a2a2]  rounded-lg">
@@ -49,7 +51,7 @@ const Collage = () => {
               src={Collage5}
               width={220}
               height={140}
-              alt="collage"
+              alt={t("collage")}
               className="w-full h-full object-cover"
             />
           </div>
@@ -58,7 +60,7 @@ const Collage = () => {
               src={Collage6}
               width={220}
               height={140}
-              alt="collage"
+              alt={t("collage")}
               className="w-full h-full object-cover"
             />
           </div>
@@ -67,7 +69,7 @@ const Collage = () => {
               src={Collage7}
               width={220}
               height={140}
-              alt="collage"
+              alt={t("collage")}
               className="w-full h-full object-cover"
             />
           </div>
@@ -76,7 +78,7 @@ const Collage = () => {
               src={Collage8}
               width={220}
               height={140}
-              alt="collage"
+              alt={t("collage")}
               className="w-full h-full object-cover"
             />
           </div>
@@ -85,7 +87,7 @@ const Collage = () => {
               src={Collage9}
               width={220}
               height={140}
-              alt="collage"
+              alt={t("collage")}
               className="w-full h-full object-cover"
             />
           </div>
@@ -94,7 +96,7 @@ const Collage = () => {
               src={Collage10}
               width={220}
               height={140}
-              alt="collage"
+              alt={t("collage")}
               className="w-full h-full object-cover"
             />
           </div>
@@ -103,7 +105,7 @@ const Collage = () => {
               src={Collage11}
               width={220}
               height={140}
-              alt="collage"
+              alt={t("collage")}
               className="w-full h-full object-cover"
             />
           </div>

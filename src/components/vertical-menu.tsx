@@ -11,6 +11,7 @@ import Zomin from "../../public/zomin.png";
 import Khiva from "../../public/khiva.png";
 import Turkistan from "../../public/turkistan.jpg";
 import Surkhandarya from "../../public/surkhandarya.jpg";
+import { useTranslations } from "next-intl";
 
 interface DrawerProps {
   isOpen: boolean;
@@ -18,19 +19,20 @@ interface DrawerProps {
 }
 
 const VerticalMenu: FC<DrawerProps> = ({ isOpen, onClose }) => {
+  const t = useTranslations();
   return (
     <div
-      className={`z-50 fixed inset-0 bg-[#00000073] bg-opacity-50 transition-opacity duration-300 ${
+      className={`z-50 absolute overflow-y-auto inset-0 bg-[#00000073] bg-opacity-50 transition-opacity duration-300 ${
         isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
       onClick={onClose}
     >
       <div
-        className={`nav fixed top-0 right-0 w-[378px] h-auto bg-white transition-transform duration-300 transform ${
-          isOpen ? "translate-x-0" : "translate-x-full "
+        className={`nav  top-0 right-0 w-[378px] bg-white transition-transform duration-300 transform ${
+          isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="py-4 px-6 border border-solid border-[#050505f]">
+        <div className="py-4 px-6 border border-solid border-[#050505f] overflow-y-auto">
           <button
             className="text-[#00000072] leading-[1.5] w-6 h-6 flex items-center justify-center font-semibold"
             onClick={onClose}
@@ -39,13 +41,13 @@ const VerticalMenu: FC<DrawerProps> = ({ isOpen, onClose }) => {
           </button>
         </div>
         <div className="p-6">
-          <ul className="flex items-center justify-center">
+          <ul className="mb-[30px] flex items-center justify-center">
             <li className=" cursor-pointer bg-[url('../../public/uzb.jpeg')] bg-no-repeat bg-center bg-cover m-[25px] p-[15px] w-[30px] rounded-[50%] hover:opacity-90"></li>
             <li className=" cursor-pointer bg-[url('../../public/rus.png')] bg-no-repeat bg-center bg-cover m-[25px] p-[15px] w-[30px] rounded-[50%] hover:opacity-90"></li>
             <li className=" cursor-pointer bg-[url('../../public/eng.jpeg')] bg-no-repeat bg-center bg-cover m-[25px] p-[15px] w-[30px] rounded-[50%] hover:opacity-90"></li>
           </ul>
-          <ul className="flex flex-col  justify-center p-0 m-0 list-none">
-            <li className="my-[30px]">
+          <ul className="flex flex-col justify-center p-0 m-0 list-none">
+            <li className="mb-[30px]">
               <Link href={"/"} className="place-link flex items-center">
                 <Image
                   src={Home}
@@ -55,11 +57,11 @@ const VerticalMenu: FC<DrawerProps> = ({ isOpen, onClose }) => {
                   className="mr-[25px] rounded-[50%] w-[100px] h-[100px]"
                 />
                 <span className="text-black text-[20px] transition-all duration-[0.3s]">
-                  Dam olish maskanlari
+                  {t("dam")}
                 </span>
               </Link>
             </li>
-            <li className="my-[30px]">
+            <li className="mb-[30px]">
               <Link href={"/buxoro"} className="place-link flex items-center">
                 <Image
                   src={Bukhara}
@@ -69,11 +71,11 @@ const VerticalMenu: FC<DrawerProps> = ({ isOpen, onClose }) => {
                   className="mr-[25px] rounded-[50%] w-[100px] h-[100px]"
                 />
                 <span className="text-black text-[20px] transition-all duration-[0.3s]">
-                  Buxoro
+                  {t("Buxoro")}
                 </span>
               </Link>
             </li>
-            <li className="my-[30px]">
+            <li className="mb-[30px]">
               <Link
                 href={"/samarqand"}
                 className="place-link flex items-center"
@@ -86,11 +88,11 @@ const VerticalMenu: FC<DrawerProps> = ({ isOpen, onClose }) => {
                   className="mr-[25px] rounded-[50%] w-[100px] h-[100px]"
                 />
                 <span className="text-black text-[20px] transition-all duration-[0.3s]">
-                  Samarqand
+                  {t("Samarqand")}
                 </span>
               </Link>
             </li>
-            <li className="my-[30px]">
+            <li className="mb-[30px]">
               <Link href={"/toshkent"} className="place-link flex items-center">
                 <Image
                   src={Tashkent}
@@ -100,11 +102,11 @@ const VerticalMenu: FC<DrawerProps> = ({ isOpen, onClose }) => {
                   className="mr-[25px] rounded-[50%] w-[100px] h-[100px]"
                 />
                 <span className="text-black text-[20px] transition-all duration-[0.3s]">
-                  Toshkent
+                  {t("Toshkent")}
                 </span>
               </Link>
             </li>
-            <li className="my-[30px]">
+            <li className="mb-[30px]">
               <Link href={"/zomin"} className="place-link flex items-center">
                 <Image
                   src={Zomin}
@@ -114,11 +116,11 @@ const VerticalMenu: FC<DrawerProps> = ({ isOpen, onClose }) => {
                   className="mr-[25px] rounded-[50%] w-[100px] h-[100px]"
                 />
                 <span className="text-black text-[20px] transition-all duration-[0.3s]">
-                  Zomin
+                  {t("Zomin")}
                 </span>
               </Link>
             </li>
-            <li className="my-[30px]">
+            <li className="mb-[30px]">
               <Link href={"/xiva"} className="place-link flex items-center">
                 <Image
                   src={Khiva}
@@ -128,11 +130,11 @@ const VerticalMenu: FC<DrawerProps> = ({ isOpen, onClose }) => {
                   className="mr-[25px] rounded-[50%] w-[100px] h-[100px]"
                 />
                 <span className="text-black text-[20px] transition-all duration-[0.3s]">
-                  Xiva
+                  {t("Xiva")}
                 </span>
               </Link>
             </li>
-            <li className="my-[30px]">
+            <li className="mb-[30px]">
               <Link
                 href={"/turkiston"}
                 className="place-link flex items-center"
@@ -145,11 +147,11 @@ const VerticalMenu: FC<DrawerProps> = ({ isOpen, onClose }) => {
                   className="mr-[25px] rounded-[50%] w-[100px] h-[100px]"
                 />
                 <span className="text-black text-[20px] transition-all duration-[0.3s]">
-                  Turkiston
+                  {t("Turkiston")}
                 </span>
               </Link>
             </li>
-            <li className="my-[30px]">
+            <li className="mb-[30px]">
               <Link
                 href={"/surxondaryo"}
                 className="place-link flex items-center"
@@ -162,7 +164,7 @@ const VerticalMenu: FC<DrawerProps> = ({ isOpen, onClose }) => {
                   className="mr-[25px] rounded-[50%] w-[100px] h-[100px]"
                 />
                 <span className="text-black text-[20px] transition-all duration-[0.3s]">
-                  Surxondaryo
+                  {t("Surxondaryo")}
                 </span>
               </Link>
             </li>

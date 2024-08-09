@@ -15,8 +15,10 @@ import Slide8 from "../../../public/samarkand.jpeg";
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
+  const t = useTranslations()
   let settings = {
     speed: 3010,
     infinite: true,
@@ -63,46 +65,46 @@ const Hero = () => {
     <section className="md:pt-[25px] pb-[30px]">
       <div className="max-w-7xl px-3 mx-auto">
         <h1 className="lg:w-[60%] lg:text-[42px] lg:text-left md:text-[36px] md:leading-[55px] w-full text-center text-[28px] leading-[35px] text-white font-medium mb-[10px]">
-          Oilaviy yoki yaqinlaringiz bilan maroqli hordiq chiqaring
+          {t('oilaviy')}
         </h1>
         <p className="lg:w-[60%] lg:text-left md:text-[18px] md:leading-[25px] md:mb-[30px] w-full text-center text-[17px] leading-[17px] mb-[10px] text-white">
-          Bepul konsultatsiya uchun ro’yxatdan o’ting
+          {t('tekin konsult')}
         </p>
         <ul className="flex flex-wrap items-center justify-center lg:justify-start p-0 m-0 list-none">
           <li className="card-el bg-white mr-5 mb-[30px] w-[270px] h-[120px] p-[15px] rounded-[8px] text-center">
             <h1 className="text-[24px] pt-[10px] font-semibold text-[#333]">
-              Tajriba
+              {t('Tajriba')}
             </h1>
             <p className="text-[16px] text[#666] font-normal">
-              10 yildan ortiq tajribaga ega jamoa
+              {t('jamoa')}
             </p>
           </li>
           <li className="card-el bg-white mr-5 mb-[30px] w-[270px] h-[120px] p-[15px] rounded-[8px] text-center">
             <h1 className="text-[24px] pt-[10px] font-semibold text-[#333]">
-              Qulay narxlar
+              {t('Qulay narxlar')}
             </h1>
             <p className="text-[16px] text[#666] font-normal">
-              7 kunlik sayohat $100 dan boshlanadi
+              {t('$100')}
             </p>
           </li>
           <li className="card-el bg-white mr-5 mb-[30px] w-[270px] h-[120px] p-[15px] rounded-[8px] text-center">
             <h1 className="text-[24px] pt-[10px] font-semibold text-[#333]">
-              Keng tanlov
+              {t('Keng tanlov')}
             </h1>
             <p className="text-[16px] text[#666] font-normal">
-              Sayohatingiz davomida 10dan...
+              {t('Sayohatingiz davomida 10dan')}
             </p>
           </li>
         </ul>
         <ul className="flex flex-wrap justify-center lg:justify-start items-center p-0 m-0 list-none">
           <li className="btn-el md:mr-[50px] mb-[30px] bg-[#ff9548] py-[15px] px-10 transition-all duration-[0.3s] rounded-[5px] hover:shadow-[1px_1px_5px_5px_#ffffff6c]">
             <Link href={"#contact"} className="hero-btn text-white text-[17px]">
-              Bepul konsultatsiya
+              {t('Bepul konsultatsiya')}
             </Link>
           </li>
           <li className="btn-el md:mr-[50px] mb-[30px] bg-[#5ec2ec] py-[15px] px-10 transition-all duration-[0.3s] rounded-[5px] hover:shadow-[1px_1px_5px_5px_#ffffff6c]">
             <Link href={"#contact"} className="hero-btn text-white text-[17px]">
-              Tayyor tur paketlar
+              {t('Tayyor tur paketlar')}
             </Link>
           </li>
         </ul>
@@ -110,7 +112,7 @@ const Hero = () => {
           <div className="slider-pr">
             <Image
               src={Slide1}
-              alt="slide"
+              alt={t("slide")}
               width={190}
               height={130}
               className="rounded-[10px] w-[190px] h-[130px]"
@@ -119,7 +121,7 @@ const Hero = () => {
           <div className="slider-pr">
             <Image
               src={Slide2}
-              alt="slide"
+              alt={t("slide")}
               width={190}
               height={130}
               className="rounded-[10px] w-[190px] h-[130px]"
@@ -128,7 +130,7 @@ const Hero = () => {
           <div className="slider-pr">
             <Image
               src={Slide3}
-              alt="slide"
+              alt={t("slide")}
               width={190}
               height={130}
               className="rounded-[10px] w-[190px] h-[130px]"
@@ -137,7 +139,7 @@ const Hero = () => {
           <div className="slider-pr">
             <Image
               src={Slide4}
-              alt="slide"
+              alt={t("slide")}
               width={190}
               height={130}
               className="rounded-[10px] w-[190px] h-[130px]"
@@ -146,7 +148,7 @@ const Hero = () => {
           <div className="slider-pr">
             <Image
               src={Slide5}
-              alt="slide"
+              alt={t("slide")}
               width={190}
               height={130}
               className="rounded-[10px] w-[190px] h-[130px]"
@@ -155,7 +157,7 @@ const Hero = () => {
           <div className="slider-pr">
             <Image
               src={Slide6}
-              alt="slide"
+              alt={t("slide")}
               width={190}
               height={130}
               className="rounded-[10px] w-[190px] h-[130px]"
@@ -164,7 +166,7 @@ const Hero = () => {
           <div className="slider-pr">
             <Image
               src={Slide7}
-              alt="slide"
+              alt={t("slide")}
               width={190}
               height={130}
               className="rounded-[10px] w-[190px] h-[130px]"
@@ -173,7 +175,7 @@ const Hero = () => {
           <div className="slider-pr">
             <Image
               src={Slide8}
-              alt="slide"
+              alt={t("slide")}
               width={190}
               height={130}
               className="rounded-[10px] w-[190px] h-[130px]"

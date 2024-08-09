@@ -9,16 +9,18 @@ import Link from "next/link";
 import { GrLocation } from "react-icons/gr";
 import { FiCalendar } from "react-icons/fi";
 import { AiOutlineUser } from "react-icons/ai";
+import { useTranslations } from "next-intl";
 
 const RestPlaces = () => {
+  const t = useTranslations();
   return (
     <section>
       <div className="max-w-7xl px-3 mx-auto">
         <h1 className="md:text-[34px] md:mb-[10px] text-[25px] mb-1 font-semibold text-[#333] text-center">
-          Dam olish maskanlarimiz
+          {t('maskan')}
         </h1>
         <p className="text-[18px] font-normal text-[#666] text-center mb-5">
-          Quyida taklif qilingan dam olish maskanlari bilan tanishib chiqing
+        {t('taklif')}
         </p>
         <ul className="flex items-center justify-evenly p-0 m-0 list-none flex-wrap">
           <li className="rest-card w-[300px] p-[15px] bg-white text-center transition-all duration-[0.3s] shadow-[0_4px_10px_#0000001a]">
@@ -32,16 +34,16 @@ const RestPlaces = () => {
             <div className="flex items-center justify-between">
               <div className="flex items-center py-[5px]">
                 <FiCalendar />
-                <p className="text-16px font-normal">2 kun</p>
+                <p className="text-16px font-normal">2 {t('kun')}</p>
               </div>
               <div className="flex items-center py-[5px]">
                 <AiOutlineUser />
-                <p className="text-16px font-normal">20 ta odam</p>
+                <p className="text-16px font-normal">{t("20 ta odam")}</p>
               </div>
             </div>
             <div className="flex items-center justify-between py-[5px]">
               <h1 className="text-[19px] font-semibold leading-[30px]">
-                Sherwood Resort
+                {t('Sherwood Resort')}
               </h1>
               <ReactStars
                 count={5}
@@ -54,23 +56,20 @@ const RestPlaces = () => {
             </div>
             <div className="flex items-center">
               <GrLocation />
-              <p className="ml-[5px] text-[17px] ">O'zbekiston</p>
+              <p className="ml-[5px] text-[17px] ">{("O'zbekiston")}</p>
             </div>
             <div className="flex items-center justify-between">
               <p className="text-[18px] text-[#ffa767]">1,000 $</p>
               <del className="text-[15px]">1,200 $</del>
             </div>
             <p className="text-[14px] font-normal text-left leading-[19px] text-[#333] py-[10px]">
-              Sayohat - bu yangi joylarni kashf etish, madaniyatlar bilan
-              tanishish va unutilmas xotiralarni yaratish imkoniyatini beradi.
-              Har bir safar - bu yangi tajriba va hayotdan zavqlanish uchun
-              ajoyib imkoniyat.
+              {t("sayohat")}
             </p>
             <Link
               href={"#contact"}
               className="bg-[#5ec2ec] py-[15px] px-10 text-[17px] text-white rounded-[5px] transition-all duration-[0.3s] hover:opacity-90 block"
             >
-              Ko'proq ma'lumot olish
+              {t("Ko'proq ma'lumot olish")}
             </Link>
           </li>
           <li className="rest-card w-[300px] p-[15px] bg-white text-center transition-all duration-[0.3s] shadow-[0_4px_10px_#0000001a]">
@@ -84,16 +83,16 @@ const RestPlaces = () => {
             <div className="flex items-center justify-between">
               <div className="flex items-center py-[5px]">
                 <FiCalendar />
-                <p className="text-16px font-normal">2 kun</p>
+                <p className="text-16px font-normal">2 {t('kun')}</p>
               </div>
               <div className="flex items-center py-[5px]">
                 <AiOutlineUser />
-                <p className="text-16px font-normal">20 ta odam</p>
+                <p className="text-16px font-normal">{t('20 ta odam')}</p>
               </div>
             </div>
             <div className="flex items-center justify-between py-[5px]">
               <h1 className="text-[19px] font-semibold leading-[30px]">
-                Wellmore Resort
+                {t('Wellmore Resort')}
               </h1>
               <ReactStars
                 count={5}
@@ -106,23 +105,20 @@ const RestPlaces = () => {
             </div>
             <div className="flex items-center">
               <GrLocation />
-              <p className="ml-[5px] text-[17px] ">O'zbekiston</p>
+              <p className="ml-[5px] text-[17px] ">{("O'zbekiston")}</p>
             </div>
             <div className="flex items-center justify-between">
               <p className="text-[18px] text-[#ffa767]">1,000 $</p>
               <del className="text-[15px]">1,200 $</del>
             </div>
             <p className="text-[14px] font-normal text-left leading-[19px] text-[#333] py-[10px]">
-              Sayohat - bu yangi joylarni kashf etish, madaniyatlar bilan
-              tanishish va unutilmas xotiralarni yaratish imkoniyatini beradi.
-              Har bir safar - bu yangi tajriba va hayotdan zavqlanish uchun
-              ajoyib imkoniyat.
+              {t("sayohat")}
             </p>
             <Link
               href={"#contact"}
               className="bg-[#5ec2ec] py-[15px] px-10 text-[17px] text-white rounded-[5px] transition-all duration-[0.3s] hover:opacity-90 block"
             >
-              Ko'proq ma'lumot olish
+              {t("Ko'proq ma'lumot olish")}
             </Link>
           </li>
           <li className="rest-card w-[300px] p-[15px] bg-white text-center transition-all duration-[0.3s] shadow-[0_4px_10px_#0000001a]">
@@ -145,7 +141,7 @@ const RestPlaces = () => {
             </div>
             <div className="flex items-center justify-between py-[5px]">
               <h1 className="text-[19px] font-semibold leading-[30px]">
-                Parkent ijod uyi
+                {t('Parkent ijod uyi')}
               </h1>
               <ReactStars
                 count={5}
@@ -158,23 +154,20 @@ const RestPlaces = () => {
             </div>
             <div className="flex items-center">
               <GrLocation />
-              <p className="ml-[5px] text-[17px] ">O'zbekiston</p>
+              <p className="ml-[5px] text-[17px] ">{("O'zbekiston")}</p>
             </div>
             <div className="flex items-center justify-between">
               <p className="text-[18px] text-[#ffa767]">1,000 $</p>
               <del className="text-[15px]">1,200 $</del>
             </div>
             <p className="text-[14px] font-normal text-left leading-[19px] text-[#333] py-[10px]">
-              Sayohat - bu yangi joylarni kashf etish, madaniyatlar bilan
-              tanishish va unutilmas xotiralarni yaratish imkoniyatini beradi.
-              Har bir safar - bu yangi tajriba va hayotdan zavqlanish uchun
-              ajoyib imkoniyat.
+              {t("sayohat")}
             </p>
             <Link
               href={"#contact"}
               className="bg-[#5ec2ec] py-[15px] px-10 text-[17px] text-white rounded-[5px] transition-all duration-[0.3s] hover:opacity-90 block"
             >
-              Ko'proq ma'lumot olish
+              {t("Ko'proq ma'lumot olish")}
             </Link>
           </li>
         </ul>
