@@ -1,19 +1,21 @@
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import React from "react";
 import { IoIosCheckmarkCircle, IoIosCloseCircle } from "react-icons/io";
 
 const Services = () => {
+  const t = useTranslations();
   return (
     <section className="py-5">
       <div className="max-w-7xl px-3 mx-auto">
         <h1 className="md:text-[30px] leading-10 text-[25px] text-black text-center font-semibold">
-          Xizmatlar va narxlar
+          {t("xizmat")}
         </h1>
         <p className="md:text-[17px] leading-[30px] text-[15px] text-[#666] text-center">
-          O'zingizga ma'qul tarifni tanlang
+          {t("tarif")}
         </p>
-        <div className="table-pr w-[85%] mx-auto py-5">
-          <table className="table w-full border-collapse">
+        <div className="table-pr lg:w-[85%] mx-auto py-5">
+          <table className="w-full border-collapse">
             <thead>
               <tr>
                 <th className="p-5 w-[25%] text-left font-bold border border-solid border-[#ddd]">
@@ -133,8 +135,8 @@ const Services = () => {
             </tbody>
           </table>
         </div>
-        <div className="w-[85%] mx-auto py-5">
-          <table className=" table w-full border-collapse">
+        <div className="table-pr lg:w-[85%] mx-auto py-5">
+          <table className="w-full border-collapse">
             <thead>
               <tr>
                 <th className="p-5 w-[25%] text-left font-bold border border-solid border-[#ddd]">
@@ -254,8 +256,8 @@ const Services = () => {
             </tbody>
           </table>
         </div>
-        <div className="w-[85%] mx-auto py-5">
-          <table className="table w-full border-collapse">
+        <div className="table-pr lg:w-[85%] mx-auto py-5">
+          <table className="w-full border-collapse">
             <thead>
               <tr>
                 <th className="p-5 w-[25%] text-left font-bold border border-solid border-[#ddd]">
