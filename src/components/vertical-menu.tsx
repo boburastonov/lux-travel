@@ -1,4 +1,3 @@
-// components/Drawer.tsx
 import { FC } from "react";
 import { RiCloseLargeLine } from "react-icons/ri";
 import Link from "next/link";
@@ -12,7 +11,6 @@ import Khiva from "../../public/khiva.png";
 import Turkistan from "../../public/turkistan.jpg";
 import Surkhandarya from "../../public/surkhandarya.jpg";
 import { useTranslations } from "next-intl";
-
 interface DrawerProps {
   isOpen: boolean;
   onClose: () => void;
@@ -20,6 +18,12 @@ interface DrawerProps {
 
 const VerticalMenu: FC<DrawerProps> = ({ isOpen, onClose }) => {
   const t = useTranslations();
+  const changeLanguage = (locale: string) => {
+    localStorage.setItem("NEXT_LOCALE", locale);
+    // Sahifani qayta yuklash
+    window.location.reload();
+  };
+
   return (
     <div
       className={`z-50 absolute overflow-y-auto inset-0 bg-[#00000073] bg-opacity-50 transition-opacity duration-300 ${
@@ -42,9 +46,18 @@ const VerticalMenu: FC<DrawerProps> = ({ isOpen, onClose }) => {
         </div>
         <div className="p-6">
           <ul className="mb-[30px] flex items-center justify-center">
-            <li className=" cursor-pointer bg-[url('../../public/uzb.jpeg')] bg-no-repeat bg-center bg-cover m-[25px] p-[15px] w-[30px] rounded-[50%] hover:opacity-90"></li>
-            <li className=" cursor-pointer bg-[url('../../public/rus.png')] bg-no-repeat bg-center bg-cover m-[25px] p-[15px] w-[30px] rounded-[50%] hover:opacity-90"></li>
-            <li className=" cursor-pointer bg-[url('../../public/eng.jpeg')] bg-no-repeat bg-center bg-cover m-[25px] p-[15px] w-[30px] rounded-[50%] hover:opacity-90"></li>
+            <li
+              onClick={() => changeLanguage("uz")}
+              className="cursor-pointer bg-[url('../../public/uzb.jpeg')] bg-no-repeat bg-center bg-cover m-[25px] p-[15px] w-[30px] rounded-[50%] hover:opacity-90"
+            ></li>
+            <li
+              onClick={() => changeLanguage("ru")}
+              className="cursor-pointer bg-[url('../../public/rus.png')] bg-no-repeat bg-center bg-cover m-[25px] p-[15px] w-[30px] rounded-[50%] hover:opacity-90"
+            ></li>
+            <li
+              onClick={() => changeLanguage("eng")}
+              className="cursor-pointer bg-[url('../../public/eng.jpeg')] bg-no-repeat bg-center bg-cover m-[25px] p-[15px] w-[30px] rounded-[50%] hover:opacity-90"
+            ></li>
           </ul>
           <ul className="flex flex-col justify-center p-0 m-0 list-none">
             <li className="mb-[30px]">
