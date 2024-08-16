@@ -1,4 +1,5 @@
-import { FC } from "react";
+"use client";
+import { FC, useEffect, useState } from "react";
 import { RiCloseLargeLine } from "react-icons/ri";
 import Link from "next/link";
 import Image from "next/image";
@@ -10,19 +11,21 @@ import Zomin from "../../public/zomin.png";
 import Khiva from "../../public/khiva.png";
 import Turkistan from "../../public/turkistan.jpg";
 import Surkhandarya from "../../public/surkhandarya.jpg";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+
 interface DrawerProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
-const VerticalMenu: FC<DrawerProps> = ({ isOpen, onClose }) => {
+const VerticalMenu: React.FC<DrawerProps> = ({ isOpen, onClose }) => {
+  const currentLocale = useLocale();
   const t = useTranslations();
-  const changeLanguage = (locale: string) => {
-    localStorage.setItem("NEXT_LOCALE", locale);
-    // Sahifani qayta yuklash
-    window.location.reload();
-  };
+  const [activeButton, setActiveButton] = useState("");
+
+  useEffect(() => {
+    setActiveButton(window?.location?.pathname);
+  }, []);
 
   return (
     <div
@@ -32,7 +35,7 @@ const VerticalMenu: FC<DrawerProps> = ({ isOpen, onClose }) => {
       onClick={onClose}
     >
       <div
-        className={`nav  top-0 right-0 w-[378px] bg-white transition-transform duration-300 transform ${
+        className={`nav top-0 right-0 w-[378px] bg-white transition-transform duration-300 transform ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -47,17 +50,28 @@ const VerticalMenu: FC<DrawerProps> = ({ isOpen, onClose }) => {
         <div className="p-6">
           <ul className="mb-[30px] flex items-center justify-center">
             <li
-              onClick={() => changeLanguage("uz")}
-              className="cursor-pointer bg-[url('../../public/uzb.jpeg')] bg-no-repeat bg-center bg-cover m-[25px] p-[15px] w-[30px] rounded-[50%] hover:opacity-90"
-            ></li>
+              className={`${
+                activeButton === "/uz" ? "text-white" : ""
+              } cursor-pointer bg-[url('../../public/uzb.jpeg')] bg-no-repeat bg-center bg-cover m-[25px] py-[10px] text-center text-white w-[40px] rounded-[50%] hover:opacity-90`}
+            >
+              <Link href={"/uz"}>uzb</Link>
+            </li>
             <li
-              onClick={() => changeLanguage("ru")}
-              className="cursor-pointer bg-[url('../../public/rus.png')] bg-no-repeat bg-center bg-cover m-[25px] p-[15px] w-[30px] rounded-[50%] hover:opacity-90"
-            ></li>
+              className={`${
+                activeButton === "/ru" ? "text-[#0000FE]" : ""
+              } cursor-pointer bg-[url('../../public/rus.png')] bg-no-repeat bg-center bg-cover m-[25px] py-[10px] text-center text-[#0000FE] w-[40px] rounded-[50%] hover:opacity-90`}
+            >
+              {" "}
+              <Link href={"/ru"}>ru</Link>
+            </li>
             <li
-              onClick={() => changeLanguage("eng")}
-              className="cursor-pointer bg-[url('../../public/eng.jpeg')] bg-no-repeat bg-center bg-cover m-[25px] p-[15px] w-[30px] rounded-[50%] hover:opacity-90"
-            ></li>
+              className={`${
+                activeButton === "/eng" ? "text-[#DB261F]" : ""
+              } cursor-pointer bg-[url('../../public/eng.jpeg')] bg-no-repeat bg-center bg-cover m-[25px] py-[10px] text-center text-[#DB261F] w-[40px] rounded-[50%] hover:opacity-90`}
+            >
+              {" "}
+              <Link href={"/eng"}>en</Link>
+            </li>
           </ul>
           <ul className="flex flex-col justify-center p-0 m-0 list-none">
             <li className="mb-[30px]">
@@ -75,7 +89,10 @@ const VerticalMenu: FC<DrawerProps> = ({ isOpen, onClose }) => {
               </Link>
             </li>
             <li className="mb-[30px]">
-              <Link href={"/buxoro"} className="place-link flex items-center">
+              <Link
+                href={`${currentLocale}/buxoro`}
+                className="place-link flex items-center"
+              >
                 <Image
                   src={Bukhara}
                   width={100}
@@ -90,7 +107,7 @@ const VerticalMenu: FC<DrawerProps> = ({ isOpen, onClose }) => {
             </li>
             <li className="mb-[30px]">
               <Link
-                href={"/samarqand"}
+                href={`${currentLocale}/samarqand`}
                 className="place-link flex items-center"
               >
                 <Image
@@ -106,7 +123,10 @@ const VerticalMenu: FC<DrawerProps> = ({ isOpen, onClose }) => {
               </Link>
             </li>
             <li className="mb-[30px]">
-              <Link href={"/toshkent"} className="place-link flex items-center">
+              <Link
+                href={`${currentLocale}/toshkent`}
+                className="place-link flex items-center"
+              >
                 <Image
                   src={Tashkent}
                   width={100}
@@ -120,7 +140,10 @@ const VerticalMenu: FC<DrawerProps> = ({ isOpen, onClose }) => {
               </Link>
             </li>
             <li className="mb-[30px]">
-              <Link href={"/zomin"} className="place-link flex items-center">
+              <Link
+                href={`${currentLocale}/zomin`}
+                className="place-link flex items-center"
+              >
                 <Image
                   src={Zomin}
                   width={100}
@@ -134,7 +157,10 @@ const VerticalMenu: FC<DrawerProps> = ({ isOpen, onClose }) => {
               </Link>
             </li>
             <li className="mb-[30px]">
-              <Link href={"/xiva"} className="place-link flex items-center">
+              <Link
+                href={`${currentLocale}/xiva`}
+                className="place-link flex items-center"
+              >
                 <Image
                   src={Khiva}
                   width={100}
@@ -149,7 +175,7 @@ const VerticalMenu: FC<DrawerProps> = ({ isOpen, onClose }) => {
             </li>
             <li className="mb-[30px]">
               <Link
-                href={"/turkiston"}
+                href={`${currentLocale}/turkiston`}
                 className="place-link flex items-center"
               >
                 <Image
@@ -166,7 +192,7 @@ const VerticalMenu: FC<DrawerProps> = ({ isOpen, onClose }) => {
             </li>
             <li className="mb-[30px]">
               <Link
-                href={"/surxondaryo"}
+                href={`${currentLocale}/surxondaryo`}
                 className="place-link flex items-center"
               >
                 <Image

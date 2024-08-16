@@ -8,7 +8,7 @@ import { FaTwitter, FaInfinity, FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { useTranslations } from "next-intl";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   const t = useTranslations();
   return (
     <footer>
@@ -21,7 +21,7 @@ const Footer = () => {
                 width={150}
                 height={102}
                 alt="Logo"
-                className="w-full h-auto"
+                className="imag w-full h-auto"
               />
             </Link>
             <p className="text-[14px] text-[#333]">
