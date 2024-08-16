@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import React from "react";
 import Header from "./header";
 import Hero from "./hero";
@@ -13,7 +13,7 @@ import Contact from "./contact";
 const Main: React.FC = () => {
   return (
     <>
-      <main className="main md:py-[30px]">
+      <main className="main">
         <Header />
         <Hero />
       </main>
