@@ -3,14 +3,14 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Slider from "react-slick";
-import Slide1 from "../../../public/slider-1.png";
-import Slide2 from "../../../public/slider-2.png";
-import Slide3 from "../../../public/slider-3.png";
-import Slide4 from "../../../public/slider-4.png";
-import Slide5 from "../../../public/zomin.png";
-import Slide6 from "../../../public/main-bg.png";
-import Slide7 from "../../../public/bukhara.png";
-import Slide8 from "../../../public/samarkand.jpeg";
+import Slide1 from "../../../../public/slider-1.png";
+import Slide2 from "../../../../public/slider-2.png";
+import Slide3 from "../../../../public/slider-3.png";
+import Slide4 from "../../../../public/slider-4.png";
+import Slide5 from "../../../../public/zomin.png";
+import Slide6 from "../../../../public/main-bg.png";
+import Slide7 from "../../../../public/bukhara.png";
+import Slide8 from "../../../../public/samarkand.jpeg";
 
 // Import css files
 import "slick-carousel/slick/slick.css";
