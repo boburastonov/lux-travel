@@ -11,7 +11,7 @@ import Contact from "./contact";
 const Main: React.FC = () => {
   return (
     <div>
-      <main className="main md:py-[30px]">
+      <main className="main">
         <Header />
         <Hero />
       </main>

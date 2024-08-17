@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
     ],
   };
   return (
-    <section className="md:pt-[25px] pb-[30px]">
+    <section className="md:pt-[25px] pb-[25px]">
       <div className="max-w-7xl px-3 mx-auto">
         <h1 className="lg:w-[60%] lg:text-[42px] lg:text-left md:text-[36px] md:leading-[55px] w-full text-center text-[28px] leading-[35px] text-white font-medium mb-[10px]">
           {t("oilaviy")}
@@ -109,8 +109,8 @@ const Hero: React.FC = () => {
             <Image
               src={Slide1}
               alt={t("slide")}
-              width={190}
-              height={130}
+              width={200}
+              height={170}
               className="imag rounded-[10px]"
             />
           </div>
@@ -118,8 +118,8 @@ const Hero: React.FC = () => {
             <Image
               src={Slide2}
               alt={t("slide")}
-              width={190}
-              height={130}
+              width={200}
+              height={170}
               className="imag rounded-[10px] w-[190px] h-[130px]"
             />
           </div>
@@ -127,8 +127,8 @@ const Hero: React.FC = () => {
             <Image
               src={Slide3}
               alt={t("slide")}
-              width={190}
-              height={130}
+              width={200}
+              height={170}
               className="imag rounded-[10px] w-[190px] h-[130px]"
             />
           </div>
@@ -136,8 +136,8 @@ const Hero: React.FC = () => {
             <Image
               src={Slide4}
               alt={t("slide")}
-              width={190}
-              height={130}
+              width={200}
+              height={170}
               className="imag rounded-[10px] w-[190px] h-[130px]"
             />
           </div>
@@ -145,8 +145,8 @@ const Hero: React.FC = () => {
             <Image
               src={Slide5}
               alt={t("slide")}
-              width={190}
-              height={130}
+              width={200}
+              height={170}
               className="imag rounded-[10px] w-[190px] h-[130px]"
             />
           </div>
@@ -154,8 +154,8 @@ const Hero: React.FC = () => {
             <Image
               src={Slide6}
               alt={t("slide")}
-              width={190}
-              height={130}
+              width={200}
+              height={170}
               className="imag rounded-[10px] w-[190px] h-[130px]"
             />
           </div>
@@ -163,8 +163,8 @@ const Hero: React.FC = () => {
             <Image
               src={Slide7}
               alt={t("slide")}
-              width={190}
-              height={130}
+              width={200}
+              height={170}
               className="imag rounded-[10px] w-[190px] h-[130px]"
             />
           </div>
@@ -172,8 +172,8 @@ const Hero: React.FC = () => {
             <Image
               src={Slide8}
               alt={t("slide")}
-              width={190}
-              height={130}
+              width={200}
+              height={170}
               className="imag rounded-[10px] w-[190px] h-[130px]"
             />
           </div>
