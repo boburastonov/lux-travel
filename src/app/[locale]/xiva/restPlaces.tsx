@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import Card1 from "../../../public/rest-card1.jpeg";
-import Card2 from "../../../public/rest-card2.png";
-import Card3 from "../../../public/rest-card3.jpeg";
+import Card1 from "../../../../public/rest-card1.jpeg";
+import Card2 from "../../../../public/rest-card2.png";
+import Card3 from "../../../../public/rest-card3.jpeg";
 import Image from "next/image";
 import ReactStars from "react-stars";
 import Link from "next/link";
