@@ -14,7 +14,7 @@ const Accardion: React.FC = () => {
         <div className="md:py-5 mb-5">
           <div className="md:p-6 p-3">
             <main className="max-w-2xl mx-auto">
-              <Accordion title={t("savol1")}>
+              <Accordion title={t(`savol1`)}>
                 <p>{t("kafolat")}</p>
               </Accordion>
               <Accordion title={t("savol2")}>
