@@ -40,35 +40,37 @@ const SelCause: React.FC = () => {
               {t("Go'zal shaharlar")}
             </h1>
             <p className="text-[16px] text[#666] font-normal">
-              {t("Sayohatingiz davomida 10dan")}
+              {t("sifatli xizmat")}
             </p>
           </li>
           <li className="card-sel bg-white mr-5 mb-[30px] w-[270px] h-[120px] p-[15px] rounded-[8px] text-center">
             <h1 className="text-[24px] pt-[10px] font-semibold text-[#333]">
-              {t("Tajriba")}
-            </h1>
-            <p className="text-[16px] text[#666] font-normal">{t("jamoa")}</p>
-          </li>
-          <li className="card-sel bg-white mr-5 mb-[30px] w-[270px] h-[120px] p-[15px] rounded-[8px] text-center">
-            <h1 className="text-[24px] pt-[10px] font-semibold text-[#333]">
-              {t("Qulay narxlar")}
-            </h1>
-            <p className="text-[16px] text[#666] font-normal">{t("$100")}</p>
-          </li>
-          <li className="card-sel bg-white mr-5 mb-[30px] w-[270px] h-[120px] p-[15px] rounded-[8px] text-center">
-            <h1 className="text-[24px] pt-[10px] font-semibold text-[#333]">
-              {t("Keng tanlov")}
+              {t("Xavfsizlik")}
             </h1>
             <p className="text-[16px] text[#666] font-normal">
-              {t("Sayohatingiz davomida 10dan")}
+              {t("xavfsiz sayohat")}
             </p>
           </li>
           <li className="card-sel bg-white mr-5 mb-[30px] w-[270px] h-[120px] p-[15px] rounded-[8px] text-center">
             <h1 className="text-[24px] pt-[10px] font-semibold text-[#333]">
-              {t("Go'zal shaharlar")}
+              {t("Ishonch2")}
+            </h1>
+            <p className="text-[16px] text[#666] font-normal">{t("2000")}</p>
+          </li>
+          <li className="card-sel bg-white mr-5 mb-[30px] w-[270px] h-[120px] p-[15px] rounded-[8px] text-center">
+            <h1 className="text-[24px] pt-[10px] font-semibold text-[#333]">
+              {t("Umumiy guruh")}
             </h1>
             <p className="text-[16px] text[#666] font-normal">
-              {t("Sayohatingiz davomida 10dan")}
+              {t("kontentlar")}
+            </p>
+          </li>
+          <li className="card-sel bg-white mr-5 mb-[30px] w-[270px] h-[120px] p-[15px] rounded-[8px] text-center">
+            <h1 className="text-[24px] pt-[10px] font-semibold text-[#333]">
+              {t("Yuqori sifat")}
+            </h1>
+            <p className="text-[16px] text[#666] font-normal">
+              {t("komfort mashinalar")}
             </p>
           </li>
         </ul>
