@@ -63,6 +63,11 @@ body {
   overflow-y: auto !important;
 }
 
+.plus:hover .plus-icon {
+  background-color: #222;
+  color: white;
+}
+
 .imag {
   width: 200px !important;
   height: 170px !important;
