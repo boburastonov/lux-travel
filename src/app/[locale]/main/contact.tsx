@@ -81,7 +81,7 @@ const Contact: React.FC = () => {
                 onChange={(e) => setAreaValue(e.target.value)}
               />
               <label className="flex items-center gap-5">
-                <input className="w-5" type="checkbox" />
+                <input className="w-5" type="checkbox" checked required />
                 <p className="text-[14px] text-white ">{t("rozilik")}</p>
               </label>
               <button
