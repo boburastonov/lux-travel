@@ -19,6 +19,15 @@ body {
 
 .main {
   background-image: url("../../public/main-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bukhara {
+  background-image: url("../../public/bukhara.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -200px;
 }
 
 .place-link:hover span {
