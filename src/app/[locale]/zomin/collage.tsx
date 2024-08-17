@@ -1,14 +1,14 @@
 import Image from "next/image";
 import React from "react";
-import Collage1 from "../../../public/collage-1.png";
-import Collage4 from "../../../public/collage-4.png";
-import Collage5 from "../../../public/collage-5.png";
-import Collage6 from "../../../public/collage-6.png";
-import Collage7 from "../../../public/collage-7.png";
-import Collage8 from "../../../public/collage-8.png";
-import Collage9 from "../../../public/collage-9.png";
-import Collage10 from "../../../public/collage-10.png";
-import Collage11 from "../../../public/collage-11.png";
+import Collage1 from "../../../../public/collage-1.png";
+import Collage4 from "../../../../public/collage-4.png";
+import Collage5 from "../../../../public/collage-5.png";
+import Collage6 from "../../../../public/collage-6.png";
+import Collage7 from "../../../../public/collage-7.png";
+import Collage8 from "../../../../public/collage-8.png";
+import Collage9 from "../../../../public/collage-9.png";
+import Collage10 from "../../../../public/collage-10.png";
+import Collage11 from "../../../../public/collage-11.png";
 import { useTranslations } from "next-intl";
 
 const Collage: React.FC = () => {
