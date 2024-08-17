@@ -30,12 +30,17 @@ const Hero: React.FC = () => {
     autoplaySpeed: 3000,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1280,
         settings: {
           slidesToShow: 5,
           slidesToScroll: 1,
-
-          infinite: true,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
         },
       },
       {
@@ -46,14 +51,14 @@ const Hero: React.FC = () => {
         },
       },
       {
-        breakpoint: 417,
+        breakpoint: 620,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 320,
+        breakpoint: 417,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
