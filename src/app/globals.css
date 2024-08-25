@@ -27,6 +27,13 @@ body {
   background-position-y: -200px;
 }
 
+.tashkent {
+  background-image: url("../../public/tashkent.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -200px;
+}
+
 .place-link:hover span {
   color: #69b1ff;
 }
