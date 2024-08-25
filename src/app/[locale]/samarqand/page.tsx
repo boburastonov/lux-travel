@@ -11,7 +11,7 @@ import Contact from "./contact";
 const Main: React.FC = () => {
   return (
     <>
-      <main className="main">
+      <main className="samarkand">
         <Header />
         <Hero />
       </main>

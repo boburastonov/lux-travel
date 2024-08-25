@@ -20,6 +20,13 @@ body {
   background-position-y: -200px;
 }
 
+.samarkand {
+  background-image: url("../../public/samarkand.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -200px;
+}
+
 .place-link:hover span {
   color: #69b1ff;
 }

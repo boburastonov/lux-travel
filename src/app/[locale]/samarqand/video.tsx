@@ -15,9 +15,9 @@ const Video: React.FC = () => {
             width="100%"
             height="100%"
             className="rounded-[10px]"
-            src="https://www.youtube.com/embed/48PSJqwZVIc?si=XpYJWX7WdxQeWOc7"
+            src="https://www.youtube.com/embed/7L5fEVgD6XQ?si=aJjdnQW4LKPiavC8"
             title="YouTube video player"
-            frameBorder={0}
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
