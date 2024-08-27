@@ -11,7 +11,7 @@ import Contact from "./contact";
 const Main: React.FC = () => {
   return (
     <>
-      <main className="samarkand">
+      <main className="samarkand pt-3 pb-[190px]">
         <Header />
         <Hero />
       </main>
