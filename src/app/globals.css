@@ -34,6 +34,13 @@ body {
   background-position-y: -200px;
 }
 
+.zomin {
+  background-image: url("../../public/zomin.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -200px;
+}
+
 .khiva {
   background-image: url("../../public/khiva.png");
   background-size: cover;
