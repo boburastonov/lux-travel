@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
     <footer>
       <div className="max-w-7xl px-3 py-5 mx-auto">
         <ul className="flex flex-wrap items-center md:justify-between justify-center p-0 m-0 list-none">
-          <li className="md:px-[30px] md:w-[30%] w-[90%] flex items-center flex-col justify-center md:self-start">
+          <li className="md:px-[30px] md:w-[30%] w-[90%] flex items-center text-center flex-col justify-center md:self-start">
             <Link href={"/"} className="w-[150px] h-[103px]">
               <Image
                 src={FooterLogo}
@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
                 className="imag w-full h-auto"
               />
             </Link>
-            <p className="text-[14px] text-[#333]">
+            <p className="text-[14px] text-[#333] mt-11">
               {t("O’zbekiston va qo’shni davlatlar bo’ylab tur xizmatlari")}
             </p>
             <div className="py-5 flex justify-center gap-[10px] text-orange-400 text-[20px]">

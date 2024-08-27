@@ -34,6 +34,13 @@ body {
   background-position-y: -200px;
 }
 
+.khiva {
+  background-image: url("../../public/khiva.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -60px;
+}
+
 .place-link:hover span {
   color: #69b1ff;
 }
