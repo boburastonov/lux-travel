@@ -12,7 +12,7 @@ import Contact from "./contact";
 const Main: React.FC = () => {
   return (
     <>
-      <main className="bukhara">
+      <main className="bukhara pt-3 pb-[190px]">
         <Header />
         <Hero />
       </main>
