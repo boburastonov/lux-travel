@@ -20,6 +20,7 @@ interface DrawerProps {
 
 const VerticalMenu: React.FC<DrawerProps> = ({ isOpen, onClose }) => {
   const currentLocale = useLocale();
+  console.log(useLocale());
   const t = useTranslations();
   const [activeButton, setActiveButton] = useState("");
 
@@ -29,15 +30,19 @@ const VerticalMenu: React.FC<DrawerProps> = ({ isOpen, onClose }) => {
 
   return (
     <div
-      className={`z-50 absolute overflow-y-auto inset-0 bg-[#00000073] bg-opacity-50 transition-opacity duration-300 ${
-        isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+      className={`flex items-center justify-end absolute z-50 inset-0 bg-[#00000073] bg-opacity-50 transition-opacity duration-500 ${
+        isOpen ? "opacity-100" : "opacity-0"
       }`}
       onClick={onClose}
     >
       <div
-        className={`nav top-0 right-0 w-[378px] bg-white transition-transform duration-300 transform ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        className="nav w-[378px] h-full overflow-y-auto bg-white [&::-webkit-scrollbar]:w-2
+  [&::-webkit-scrollbar-track]:rounded-full
+  [&::-webkit-scrollbar-track]:bg-gray-100
+  [&::-webkit-scrollbar-thumb]:rounded-full
+  [&::-webkit-scrollbar-thumb]:bg-gray-300
+  dark:[&::-webkit-scrollbar-track]:transparent
+  dark:[&::-webkit-scrollbar-thumb]:bg-[#C1C1C1]"
       >
         <div className="py-4 px-6 border border-solid border-[#050505f] overflow-y-auto">
           <button

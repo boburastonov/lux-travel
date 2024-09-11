@@ -9,7 +9,7 @@ import VerticalMenu from "@/components/vertical-menu";
 const Header: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false);
   return (
-    <header className="pt-[30px] pb-[25px]">
+    <header className="pt-[30px] pb-[25px] relative">
       <div className="max-w-7xl px-3 mx-auto flex items-center justify-between">
         <Link
           href={"/"}
